@@ -1,0 +1,12 @@
+The sole purpose of the source code is to elucidate programming examples
+that are directly related to the topics discussed in this book.
+Minimal attention is given to essential software engineering concerns
+such as robust error handling, security risks, numerical stability,
+rounding errors, or ill-conditioned functions. You are responsible
+for addressing these concerns should you decide to use any of the
+source code in your own programs.
+
+The Include folder contains shared C++ header files. These files
+incorporate classes, templates, methods, and macros that are intended
+for use with this book's source code. This code should not be used for
+other purposes without proper modifications.
