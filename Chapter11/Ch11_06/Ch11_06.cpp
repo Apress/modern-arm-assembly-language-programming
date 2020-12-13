@@ -20,7 +20,7 @@ void ShiftA(void)
     const size_t n = 4;
 
     uint32_t a = 0xC1234561;
-    uint32_t x[4];
+    uint32_t x[n];
     ShiftA_(x, a);
     PrintResult("ShiftA_", x, a, n);
 }
@@ -30,7 +30,7 @@ void ShiftB(void)
     const size_t n = 4;
 
     uint32_t a = 0xC1234561;
-    uint32_t x[4];
+    uint32_t x[n];
     uint32_t count = 8;
     ShiftB_(x, a, count);
     PrintResult("ShiftB_", x, a, n, (int)count);
