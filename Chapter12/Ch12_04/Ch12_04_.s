@@ -28,12 +28,12 @@ SumSquaresB_:
             add x1,x0,1                         // x1 = n + 1
             mul x2,x0,x1                        // x2 = n * (n + 1)
 
-            lsl x3,x0,1                         // r3 = 2 * n
-            add x3,x3,1                         // r3 = 2 * n + 1
-            mul x3,x3,x2                        // r3 = dividend
+            lsl x3,x0,1                         // x3 = 2 * n
+            add x3,x3,1                         // x3 = 2 * n + 1
+            mul x3,x3,x2                        // x3 = dividend
 
-            mov x1,6                            // r1 = divisor
-            sdiv x0,x3,x1                       // r0 = final sum
+            mov x1,6                            // x1 = divisor
+            sdiv x0,x3,x1                       // x0 = final sum
             ret
 
 // extern "C" void SumSquares_(int64_t n, int64_t* sum_a, int64_t* sum_b);
