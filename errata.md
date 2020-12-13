@@ -1,13 +1,7 @@
 # Errata for *Modern Arm Assembly Language Programming*
 
-On **page xx** [Summary of error]:
+In **Table 10-3** Offset is incorrect:
  
-Details of error here. Highlight key pieces in **bold**.
-
-***
-
-On **page xx** [Summary of error]:
- 
-Details of error here. Highlight key pieces in **bold**.
+In the first **Pre-indexed** example, `w1 = *(x0 + 8)` should be `w1 = *(x0 + 4)`
 
 ***
