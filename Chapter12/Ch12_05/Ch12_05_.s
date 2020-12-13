@@ -32,7 +32,7 @@ CalcArraySumB_:
 
             mov w3,0                            // i = 0
 
-LoopB:      ldr x4,[x0,w3,uxtw 3]               // r5 = x[i]
+LoopB:      ldr x4,[x0,w3,uxtw 3]               // x4 = x[i]
             add x2,x2,x4                        // sum += x[i]
 
             add w3,w3,1                         // i += 1
