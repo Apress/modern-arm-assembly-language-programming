@@ -9,7 +9,7 @@
 CalcArraySumA_:
 
             mov w2,0                            // sum = 0
-            cmp w1,w0                           // is n <= 0?
+            cmp w1,0                            // is n <= 0?
             b.le DoneA                          // jump if n <= 0
 
 LoopA:      ldr w3,[x0],4                       // w3 = x[i]
@@ -32,7 +32,7 @@ CalcArraySumB_:
 
             mov w3,0                            // i = 0
 
-LoopB:      ldr x4,[x0,w3,uxtw 3]               // r5 = x[i]
+LoopB:      ldr x4,[x0,w3,uxtw 3]               // x4 = x[i]
             add x2,x2,x4                        // sum += x[i]
 
             add w3,w3,1                         // i += 1
