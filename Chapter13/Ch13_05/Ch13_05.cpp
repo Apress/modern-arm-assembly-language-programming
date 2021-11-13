@@ -9,7 +9,7 @@
 using namespace std;
 
 extern "C" double ConvertA_(float a, int b, unsigned int c, long long d, unsigned long long e);
-extern "C" int ConvertB_(int* x, const char** msg_strings, double a);
+extern "C" void ConvertB_(int* x, const char** msg_strings, double a);
 
 void ConvertA(void)
 {
