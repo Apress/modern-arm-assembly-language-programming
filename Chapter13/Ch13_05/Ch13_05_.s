@@ -27,7 +27,7 @@ ConvertA_:  fcvt d0,s0                          // d0 = a as F64
             fadd d0,d6,d7                       // d0 = final sum
             ret
 
-// extern "C" int ConvertB_(int* x, const char** msg_strings, double a);
+// extern "C" void ConvertB_(int* x, const char** msg_strings, double a);
 
             .global ConvertB_
 ConvertB_:
