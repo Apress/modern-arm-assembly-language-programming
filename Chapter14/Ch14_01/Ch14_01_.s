@@ -14,7 +14,7 @@ PackedAddI16_:
             str q2,[x0]                         // save result to x[0]
 
             sqadd v3.8h,v0.8h,v1.8h             // v3 = a + b (saturated)
-            str q2,[x0,16]                      // save result to x[1]
+            str q3,[x0,16]                      // save result to x[1]
             ret
 
 // extern "C" void PackedSubI16_(Vec128 x[2], const Vec128& b, const Vec128& c);
@@ -28,7 +28,7 @@ PackedSubI16_:
             str q2,[x0]                         // save result to x[0]
 
             sqsub v3.8h,v0.8h,v1.8h             // v3 = a - b (saturated)
-            str q2,[x0,16]                      // save result to x[1]
+            str q3,[x0,16]                      // save result to x[1]
             ret
 
 // extern "C" void PackedAddU16_(Vec128 x[2], const Vec128& a, const Vec128& b);
