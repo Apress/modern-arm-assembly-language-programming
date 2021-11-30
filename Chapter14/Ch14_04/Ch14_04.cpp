@@ -44,7 +44,7 @@ bool CalcMinMaxU8(uint8_t* x_min, uint8_t* x_max, const uint8_t* x, uint64_t n)
 
         if (val < x_min_temp)
             x_min_temp = val;
-        else if (val > x_max_temp)
+        if (val > x_max_temp)
             x_max_temp = val;
     }
 
